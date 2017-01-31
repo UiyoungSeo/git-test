@@ -47,6 +47,15 @@ README.md 파일을 add 했다. 이제는 지금까지의 이 프로젝트의 sn
 
 >from [GitHub For Beginners: Don’t Get Scared, Get Started](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/)
 
+*=>summary*
+
+	git init
+	echo "# git-test" >> README.md
+	git add README.md
+	git commit -m "first commit"
+	git remote add origin https://github.com/[username]/[projectname].git
+	git push -u origin master
+
 
 ##프로젝트와 git을 연결 한 후 파일을 수정하고 올릴땐
 
