@@ -83,3 +83,8 @@ git pull: 로컬 컴퓨터에서 작업할 때, 작업하고 있는 저장소의
 **git checkout**: 글자 그대로, 현재 위치하고 있지 않은 저장소를 “체크아웃”할 수 있다. 이것은 체크하길 원하는 저장소로 옮겨가게 해주는 탐색 명령이다. master 브랜치를 들여다 보고 싶으면, git checkout master를 사용할 수 있고, git checkout cats로 또 다른 브랜치를 들여다 볼 수 있다.
 
 **git merge**: 브랜치에서 작업을 끝내고, 모든 협업자가 볼 수 있는 master 브랜치로 병합할 수 있다. git merge cats는 “cats” 브랜치에서 만든 모든 변경사항을 master로 추가한다.
+
+---
+## github를 웹호스팅으로 이용하기
+https://uiyoungseo.github.io/git-test/index.html  
+https://opentutorials.org/course/2473/16117
