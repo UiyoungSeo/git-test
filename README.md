@@ -1,12 +1,12 @@
-##How to use Git
+## How to use Git
 
-###1. Install Git
+### 1. Install Git
 [Git](https://desktop.github.com/)을 다운받고 설치하여 Git Shell을 실행한다.
 
-###2. Creating Your Online Repository in github.com 
+### 2. Creating Your Online Repository in github.com 
 github에서 git-test라는 새로운 repository를 만든다.
 
-###3. Creating Your Local Repository
+### 3. Creating Your Local Repository
 	mkdir git-test
 명령어로 github에 만든 repository와 같은 이름의 디렉토리를 만든다. 
 
@@ -30,7 +30,7 @@ README.md 파일을 add 했다. 이제는 지금까지의 이 프로젝트의 sn
 
 이제, 로컬에서 작업을 하고 github에 첫 커밋을 push 할 때이다. 하지만 아직 온라인 저장소를 로컬저장소와 연결하지 않았다.
 
-###4. Connect Your Local Repository To Your Github Repository
+### 4. Connect Your Local Repository To Your Github Repository
 먼저, git에게 remote repository가 실제로 어디에 존재하고 있는지 알려줘야한다. git add 명령어를 사용 하기 전까지 git이 파일들을 인식하지 못했던 것 처럼 remote repository도 아직 인식하지 못한다. 
 
 	git remote add origin https://github.com/[username]/git-test.git
@@ -58,7 +58,7 @@ README.md 파일을 add 했다. 이제는 지금까지의 이 프로젝트의 sn
 
 ***
 
-##프로젝트와 git을 연결 한 후 파일을 수정하고 올릴땐
+## 프로젝트와 git을 연결 한 후 파일을 수정하고 올릴땐
 
 1. git status로 바뀐파일 확인
    저장소 상태를 체크. 어떤 화일이 저장소 안에 있는지, 커밋이 필요한 변경사항이 있는지, 현재 저장소의 어떤 브랜치에서 작업하고 있는지 등을 볼 수 있다.
@@ -70,7 +70,7 @@ README.md 파일을 add 했다. 이제는 지금까지의 이 프로젝트의 sn
 
 ***
 
-##다른사람이 push한 github에 있는 코드를 받아오려면
+## 다른사람이 push한 github에 있는 코드를 받아오려면
 
 	git pull origin master
 
