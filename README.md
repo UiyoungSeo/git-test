@@ -60,11 +60,11 @@ README.md 파일을 add 했다. 이제는 지금까지의 이 프로젝트의 sn
 
 ## 프로젝트와 git을 연결 한 후 파일을 수정하고 올릴땐
 
-1. git status로 바뀐파일 확인
+1. `git status` 로 바뀐파일 확인
    저장소 상태를 체크. 어떤 화일이 저장소 안에 있는지, 커밋이 필요한 변경사항이 있는지, 현재 저장소의 어떤 브랜치에서 작업하고 있는지 등을 볼 수 있다.
-2. git add 파일이름 or git add --a or git add * 로 올릴 내용을 add
-3. git commit -m "태그 내용"
-4. git push origin master 
+2. `git add 파일이름` or `git add --a` or `git add *` 로 올릴 내용을 add
+3. `git commit -m "태그 내용"`
+4. `git push origin master`
 5. github id, password
 
 
