@@ -1,7 +1,7 @@
 ## How to use Git
 
 ### 1. Install Git
-[Git](https://desktop.github.com/)을 다운받고 설치하여 Git Shell을 실행한다.
+[Git](https://desktop.github.com/) 설치 후 Git Shell을 실행한다.
 
 ### 2. Creating Your Online Repository in github.com 
 github에서 git-test라는 새로운 repository를 만든다.
