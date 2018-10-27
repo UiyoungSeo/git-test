@@ -7,7 +7,9 @@
 github에서 git-test라는 새로운 repository를 만든다.
 
 ### 3. Creating Your Local Repository
+```bash
 	mkdir git-test
+```
 명령어로 github에 만든 repository와 같은 이름의 디렉토리를 만든다. 
 
 	cd git-test
