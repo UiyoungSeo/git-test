@@ -8,55 +8,65 @@ github에서 git-test라는 새로운 repository를 만든다.
 
 ### 3. Creating Your Local Repository
 ```bash
-	mkdir git-test
+mkdir git-test
 ```
 명령어로 github에 만든 repository와 같은 이름의 디렉토리를 만든다. 
-
-	cd git-test
+```bash
+cd git-test
+```
 방금 만든 디렉토리로 이동한다. (cd:change directory)
-
-	git init
+```bash
+git init
+```
 깃 저장소를 초기화한다. 저장소나 디렉토리 안에서 이 명령을 실행하기 전까지는 그냥 일반 폴더이다. 초기화한 후부터 git 명령어들을 줄 수 있다.
-
-	echo "# git-test" >> README.md
+```bash
+echo "# git-test" >> README.md
+```
 README.md 파일을 생성하고 거기에 # git-test 라는 내용을 집어 넣는다.
-
-	git status
+```bash
+git status
+```
 README.md 파일이 untracked files 리스트에 있는 것을 확인할 수 있다. 이것은 git이 지금은 그 파일을 무시하고 있다는 것을 의미한다. git이 이 파일을 인식하게 하기위해 다음을 type 한다.
-
-	git add README.md
+```bash
+git add README.md
+```
 README.md 파일을 add 했다. 이제는 지금까지의 이 프로젝트의 snapshot을 찍을 시간 즉, "commit"할 시간이다. 
-
-	git commit -m "first commit"
+```bash
+git commit -m "first commit"
+```
 깃의 가장 중요한 명령어. 어떤 변경사항이라도 만든 후, 저장소의 “스냅샷”을 찍기 위해 이것을 입력한다. 보통 “git commit -m “Message hear.” 형식으로 사용한다. -m은 명령어의 그 다음 부분을 메시지로 읽어야 한다는 것을 말한다. 버전관리는 시간에 대해 유연성을 가지므로 현재형으로 작성해야 한다. 더 이전 버전으로 되돌아갈 수 있으므로 커밋을 했던 것을 적는 것이 아니라, 커밋한 것을 적어야 한다.
 
 이제, 로컬에서 작업을 하고 github에 첫 커밋을 push 할 때이다. 하지만 아직 온라인 저장소를 로컬저장소와 연결하지 않았다.
 
 ### 4. Connect Your Local Repository To Your Github Repository
 먼저, git에게 remote repository가 실제로 어디에 존재하고 있는지 알려줘야한다. git add 명령어를 사용 하기 전까지 git이 파일들을 인식하지 못했던 것 처럼 remote repository도 아직 인식하지 못한다. 
-
-	git remote add origin https://github.com/[username]/git-test.git
-
+```bash
+git remote add origin https://github.com/[username]/git-test.git
+```
 (온라인에 있는 https://github.com/[username]/git-test.git repository를 origin으로 지정한다)
 이제 git은 저기에 remote repository가 있고 거기에 local repository의 변경사항을 보내길 원한다는 것을 알게되었다. 확인하기 위해 다음을 type하여 확인한다.
-	git remote -v
+```bash
+git remote -v
+```
 이 커맨드는 로컬 저장소가 알고있는 원격 remote origin의 목록을 보여준다. 
 
 이제 github 원격 저장소로 변경사항을 업로드, 즉 push 해보자. 
-
-	git push -u origin master
+```bash
+git push -u origin master
+```
 (u:upstream 첫번째올릴때만 쓴다, origin이라는 remote에, 저장소 master에 push 한다)
 
 >from [GitHub For Beginners: Don’t Get Scared, Get Started](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/)
 
 *=>summary*
-
-	git init
-	echo "# git-test" >> README.md
-	git add README.md
-	git commit -m "first commit"
-	git remote add origin https://github.com/[username]/[projectname].git
-	git push -u origin master
+```bash
+git init
+echo "# git-test" >> README.md
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/[username]/[projectname].git
+git push -u origin master
+```
 
 ***
 
@@ -73,8 +83,9 @@ README.md 파일을 add 했다. 이제는 지금까지의 이 프로젝트의 sn
 ***
 
 ## 다른사람이 push한 github에 있는 코드를 받아오려면
-
-	git pull origin master
+```
+git pull origin master
+```
 
 git pull: 로컬 컴퓨터에서 작업할 때, 작업하고 있는 저장소의 최신 버전을 원하면, 이 명령어로 깃허브로부터 변경사항을 다운로드한다(“pull”).
 
