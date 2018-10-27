@@ -86,5 +86,5 @@ git pull: 로컬 컴퓨터에서 작업할 때, 작업하고 있는 저장소의
 
 ---
 ## github를 웹호스팅으로 이용하기
-https://uiyoungseo.github.io/git-test/index.html  
+https://uiyoung.github.io/git-test/index.html  
 https://opentutorials.org/course/2473/16117
